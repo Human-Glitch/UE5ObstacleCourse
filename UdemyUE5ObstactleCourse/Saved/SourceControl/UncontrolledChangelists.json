@@ -1,0 +1,15 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstactleCourse/Content/LearningKit_Games/Maps/LearningKit_Games_Showcase.umap",
+				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstactleCourse/Content/Main.umap",
+				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstactleCourse/Content/BP_ThirdPersonCharacter.uasset",
+				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstactleCourse/Content/SCK_Casual01/Blueprints/ThirdPersonCharacter.uasset"
+			]
+		}
+	]
+}
