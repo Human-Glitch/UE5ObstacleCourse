@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "UdemyUE5ObstactleCourse",
+			"Path": "/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Source/UdemyUE5ObstactleCourse.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UdemyUE5ObstactleCourseEditor",
+			"Path": "/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Source/UdemyUE5ObstactleCourseEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

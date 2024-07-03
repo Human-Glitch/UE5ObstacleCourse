@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Source/UdemyUE5ObstactleCourse/UdemyUE5ObstactleCourse.Build.cs",
+		"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Source/UdemyUE5ObstactleCourse.Target.cs",
+		"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Source/UdemyUE5ObstactleCourseEditor.Target.cs"
+	],
+	"EngineVersion": "5.2.1"
+}
