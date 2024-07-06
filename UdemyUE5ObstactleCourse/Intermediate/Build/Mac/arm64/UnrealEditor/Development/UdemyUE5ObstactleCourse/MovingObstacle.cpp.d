@@ -3828,4 +3828,8 @@
   Runtime/Engine/Classes/GameFramework/Actor.h \
   /Users/kodybuss/Unreal\ Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Intermediate/Build/Mac/UnrealEditor/Inc/UdemyUE5ObstactleCourse/UHT/MovingObstacle.generated.h \
   Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
-  Runtime/CoreUObject/Public/UObject/ScriptMacros.h
+  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
+  Runtime/Engine/Classes/GameFramework/GameSession.h \
+  Runtime/CoreOnline/Public/Online/CoreOnline.h \
+  Runtime/Engine/Classes/GameFramework/Info.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameSession.generated.h
