@@ -7,8 +7,10 @@
 			"files": [
 				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Content/Main.umap",
 				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Content/BP_MovingObstacle.uasset",
-				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Content/BP_MovingPillar.uasset",
 				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Content/BP_RisingPillar.uasset",
+				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Content/BP_PushingBox.uasset",
+				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Content/BP_ThirdPersonCharacter.uasset",
+				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Content/BP_MovingPillar.uasset",
 				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstacleCourse/UdemyUE5ObstactleCourse/Content/BP_PushingBlock.uasset",
 				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstactleCourse/Content/LearningKit_Games/Maps/LearningKit_Games_Showcase.umap",
 				"/Users/kodybuss/Unreal Projects/UdemyUE5ObstactleCourse/Content/Main.umap",
