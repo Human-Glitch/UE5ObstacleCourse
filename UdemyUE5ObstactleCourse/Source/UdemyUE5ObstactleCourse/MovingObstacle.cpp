@@ -29,7 +29,7 @@ void AMovingObstacle::Tick(float DeltaTime)
 		// Get current location
 	FVector CurrentLocation = GetActorLocation();
 		// Add vector to that location
-	CurrentLocation.Y += PlatformVelocity.Y * DeltaTime;
+	CurrentLocation.Z += PlatformVelocity.Z * DeltaTime;
 	
 		// Set the location
 	SetActorLocation(CurrentLocation);
