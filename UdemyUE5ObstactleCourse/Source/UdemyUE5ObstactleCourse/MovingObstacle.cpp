@@ -17,7 +17,7 @@ void AMovingObstacle::BeginPlay()
 {
 	Super::BeginPlay();
 
-	SetActorLocation(MyVector);
+	StartLocation = GetActorLocation();
 }
 
 // Called every frame
@@ -25,8 +25,29 @@ void AMovingObstacle::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	MyVector.Y = MyVector.Y + 1;
+	// Move platform forwards
+		// Get current location
+	FVector CurrentLocation = GetActorLocation();
+		// Add vector to that location
+	CurrentLocation.Y += PlatformVelocity.Y * DeltaTime;
 	
-	SetActorLocation(MyVector);
+		// Set the location
+	SetActorLocation(CurrentLocation);
+	
+	// Send platform back if gone too far
+		// Check how far we have moved
+	
+	float DistanceMoved = FVector::Dist(StartLocation, CurrentLocation);
+		// Reverse direction of motion if gone too far
+
+	// If moved pass threshold, then reset to max distance + direction from start location
+	if(DistanceMoved > MaxMoveDistance)
+	{
+		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
+		StartLocation += MoveDirection * MaxMoveDistance;
+		SetActorLocation(StartLocation);
+
+		PlatformVelocity = -PlatformVelocity;
+	}
 }
 
