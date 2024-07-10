@@ -25,23 +25,14 @@ void AMovingObstacle::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	// Move platform forwards
-		// Get current location
-	FVector CurrentLocation = GetActorLocation();
-		// Add vector to that location
-	CurrentLocation += PlatformVelocity * DeltaTime;
-	
-		// Set the location
-	SetActorLocation(CurrentLocation);
-	
-	// Send platform back if gone too far
-		// Check how far we have moved
-	
-	float DistanceMoved = FVector::Dist(StartLocation, CurrentLocation);
-		// Reverse direction of motion if gone too far
+	MovePlatform(DeltaTime);
+	RotatePlatform(DeltaTime);
+}
 
+void AMovingObstacle::MovePlatform(float DeltaTime)
+{
 	// If moved pass threshold, then reset to max distance + direction from start location
-	if(DistanceMoved > MaxMoveDistance)
+	if(ShouldPlatformReturn())
 	{
 		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
 		StartLocation += MoveDirection * MaxMoveDistance;
@@ -49,5 +40,24 @@ void AMovingObstacle::Tick(float DeltaTime)
 
 		PlatformVelocity = -PlatformVelocity;
 	}
+	else
+	{
+		FVector CurrentLocation = GetActorLocation();
+		CurrentLocation += PlatformVelocity * DeltaTime;
+	
+		SetActorLocation(CurrentLocation);
+	}
 }
+
+void AMovingObstacle::RotatePlatform(float DeltaTime)
+{
+	AddActorLocalRotation(RotationVelocity * DeltaTime);
+}
+
+bool AMovingObstacle::ShouldPlatformReturn() const
+{
+	float DistanceMoved = FVector::Dist(StartLocation, GetActorLocation());
+	return DistanceMoved > MaxMoveDistance;
+}
+
 

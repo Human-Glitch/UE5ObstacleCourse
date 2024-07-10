@@ -9,6 +9,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMovingObstacle() {}
 // Cross Module References
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UDEMYUE5OBSTACTLECOURSE_API UClass* Z_Construct_UClass_AMovingObstacle();
@@ -37,6 +38,10 @@ void EmptyLinkFunctionForGeneratedCodeMovingObstacle() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxMoveDistance_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxMoveDistance;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_RotationVelocity_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_RotationVelocity;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -53,21 +58,29 @@ void EmptyLinkFunctionForGeneratedCodeMovingObstacle() {}
 #endif
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMovingObstacle_Statics::NewProp_PlatformVelocity_MetaData[] = {
-		{ "Category", "Moving Platform" },
+		{ "Category", "Moving" },
 		{ "ModuleRelativePath", "MovingObstacle.h" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMovingObstacle_Statics::NewProp_PlatformVelocity = { "PlatformVelocity", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AMovingObstacle, PlatformVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AMovingObstacle_Statics::NewProp_PlatformVelocity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMovingObstacle_Statics::NewProp_PlatformVelocity_MetaData)) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMovingObstacle_Statics::NewProp_PlatformVelocity = { "PlatformVelocity", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AMovingObstacle, PlatformVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AMovingObstacle_Statics::NewProp_PlatformVelocity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMovingObstacle_Statics::NewProp_PlatformVelocity_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMovingObstacle_Statics::NewProp_MaxMoveDistance_MetaData[] = {
-		{ "Category", "MovingObstacle" },
+		{ "Category", "Moving" },
 		{ "ModuleRelativePath", "MovingObstacle.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMovingObstacle_Statics::NewProp_MaxMoveDistance = { "MaxMoveDistance", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AMovingObstacle, MaxMoveDistance), METADATA_PARAMS(Z_Construct_UClass_AMovingObstacle_Statics::NewProp_MaxMoveDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMovingObstacle_Statics::NewProp_MaxMoveDistance_MetaData)) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMovingObstacle_Statics::NewProp_MaxMoveDistance = { "MaxMoveDistance", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AMovingObstacle, MaxMoveDistance), METADATA_PARAMS(Z_Construct_UClass_AMovingObstacle_Statics::NewProp_MaxMoveDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMovingObstacle_Statics::NewProp_MaxMoveDistance_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMovingObstacle_Statics::NewProp_RotationVelocity_MetaData[] = {
+		{ "Category", "Rotation" },
+		{ "ModuleRelativePath", "MovingObstacle.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMovingObstacle_Statics::NewProp_RotationVelocity = { "RotationVelocity", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AMovingObstacle, RotationVelocity), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_AMovingObstacle_Statics::NewProp_RotationVelocity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMovingObstacle_Statics::NewProp_RotationVelocity_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMovingObstacle_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMovingObstacle_Statics::NewProp_PlatformVelocity,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMovingObstacle_Statics::NewProp_MaxMoveDistance,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMovingObstacle_Statics::NewProp_RotationVelocity,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMovingObstacle_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMovingObstacle>::IsAbstract,
@@ -106,9 +119,9 @@ void EmptyLinkFunctionForGeneratedCodeMovingObstacle() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_kodybuss_Unreal_Projects_UdemyUE5ObstacleCourse_UdemyUE5ObstactleCourse_Source_UdemyUE5ObstactleCourse_MovingObstacle_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMovingObstacle, AMovingObstacle::StaticClass, TEXT("AMovingObstacle"), &Z_Registration_Info_UClass_AMovingObstacle, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMovingObstacle), 1272569007U) },
+		{ Z_Construct_UClass_AMovingObstacle, AMovingObstacle::StaticClass, TEXT("AMovingObstacle"), &Z_Registration_Info_UClass_AMovingObstacle, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMovingObstacle), 366562884U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_kodybuss_Unreal_Projects_UdemyUE5ObstacleCourse_UdemyUE5ObstactleCourse_Source_UdemyUE5ObstactleCourse_MovingObstacle_h_2965001183(TEXT("/Script/UdemyUE5ObstactleCourse"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_kodybuss_Unreal_Projects_UdemyUE5ObstacleCourse_UdemyUE5ObstactleCourse_Source_UdemyUE5ObstactleCourse_MovingObstacle_h_1908924451(TEXT("/Script/UdemyUE5ObstactleCourse"),
 		Z_CompiledInDeferFile_FID_kodybuss_Unreal_Projects_UdemyUE5ObstacleCourse_UdemyUE5ObstactleCourse_Source_UdemyUE5ObstactleCourse_MovingObstacle_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_kodybuss_Unreal_Projects_UdemyUE5ObstacleCourse_UdemyUE5ObstactleCourse_Source_UdemyUE5ObstactleCourse_MovingObstacle_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
